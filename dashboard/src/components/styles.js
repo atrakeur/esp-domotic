@@ -3,7 +3,7 @@ import { fromPairs, map } from 'lodash'
 import picostyle from "picostyle"
 const style = picostyle(h)
 
-import bg from '../assets/bg-1.jpg'
+import bg from '../assets/bg.jpg'
 
 const StyledBody = style("div")({
   backgroundImage: `url(${bg})`,
