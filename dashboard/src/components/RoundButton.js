@@ -7,10 +7,12 @@ const RoundButton = style("a")({
   alignItems: 'center',
   alignSelf: 'center',
   height: '42px',
-  borderRadius: '50%',
+  borderRadius: '25px',
   cursor: 'pointer',
   background: 'transparent',
   border: '1px solid rgba(255, 255, 255, 0.2)',
+  padding: '0 25px',
+  color: '#fff',
 })
 
 export default RoundButton

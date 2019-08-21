@@ -1,4 +1,5 @@
 import { h } from "preact"
+import { fromPairs, map } from 'lodash'
 import picostyle from "picostyle"
 const style = picostyle(h)
 
@@ -8,6 +9,14 @@ const StyledBody = style("div")({
   backgroundAttachment: 'fixed',
   backgroundRepeat: 'no-repeat',
   color: '#646c9a',
+
+  ...(fromPairs(map(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'], elem => ([
+    ` ${elem}`,
+    {
+      margin: '0',
+      padding: '0',
+    }
+  ]))))
 })
 
 const StyledContainer = style("div")({
@@ -24,6 +33,7 @@ const StyledContentContainer = style("div")({
   width: '100%',
   backgroundColor: 'rgb(249, 249, 252)',
   padding: '20px 20px',
+  borderRadius: '15px',
 })
 
 export {

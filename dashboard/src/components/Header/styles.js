@@ -7,7 +7,7 @@ const HeaderWrapper = style("div")({
   width: '100%',
   display: 'flex',
   alignItems: 'stretch',
-  marginBottom: '30px',
+  marginBottom: '10px',
 })
 
 const HeaderWrapperInner = style("div")({
