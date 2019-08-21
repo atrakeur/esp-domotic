@@ -3,8 +3,10 @@ import { fromPairs, map } from 'lodash'
 import picostyle from "picostyle"
 const style = picostyle(h)
 
+import bg from '../assets/bg-1.jpg'
+
 const StyledBody = style("div")({
-  backgroundImage: 'url("https://keenthemes.com/metronic/preview/demo8/assets/media/demos/demo8/bg-1.jpg")',
+  backgroundImage: `url(${bg})`,
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
   backgroundRepeat: 'no-repeat',
