@@ -1,9 +1,7 @@
 import { h } from 'preact'
 import {StyledContentContainer} from "../../components/styles"
 import Panel from '../../components/Panel'
-import {
-  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
-} from 'precharts'
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'precharts'
 
 const data = [
   {
@@ -47,6 +45,7 @@ const Home = () => (
 				<YAxis />
 				<Tooltip />
 				<Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+        <Area type="monotone" dataKey="pv" stroke="#8884d8" fill="#8884d8" />
 			</AreaChart>
 		</Panel>
 	</StyledContentContainer>

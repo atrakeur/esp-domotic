@@ -35,7 +35,8 @@
     "preact-fluid": "0.9.1",
     "preact-render-to-string": "^4.1.0",
     "preact-router": "^2.5.7",
-    "precharts": "1.4.0"
+    "precharts": "1.4.0",
+    "whatwg-fetch": "3.0.0"
   },
   "jest": {
     "preset": "jest-preset-preact"
